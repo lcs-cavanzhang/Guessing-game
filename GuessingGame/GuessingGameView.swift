@@ -172,37 +172,7 @@ struct GuessingGameView: View {
         }
     }
 
-    // Makes the guess 10 smaller, but never smaller than the lowest number.
-    func lowerGuessByTen() {
-        guess -= 10
-        if guess < lowestNumber {
-            guess = lowestNumber
-        }
-    }
-
-    // Makes the guess 1 smaller, but never smaller than the lowest number.
-    func lowerGuessByOne() {
-        guess -= 1
-        if guess < lowestNumber {
-            guess = lowestNumber
-        }
-    }
-
-    // Makes the guess 1 bigger, but never bigger than the highest number.
-    func raiseGuessByOne() {
-        guess += 1
-        if guess > highestNumber {
-            guess = highestNumber
-        }
-    }
-
-    // Makes the guess 10 bigger, but never bigger than the highest number.
-    func raiseGuessByTen() {
-        guess += 10
-        if guess > highestNumber {
-            guess = highestNumber
-        }
-    }
+    
 
     // Picks a new secret number and resets everything else.
     func startNewGame() {
